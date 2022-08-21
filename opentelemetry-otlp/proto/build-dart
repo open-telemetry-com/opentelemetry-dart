@@ -1,0 +1,7 @@
+#!/bin/bash
+
+rm -rf gen/
+rm -rf ../lib/src/otlp/proto
+make gen-dart
+mkdir -p ../lib/src/otlp
+mv  gen/dart/opentelemetry/proto ../lib/src/otlp

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# https://github.com/flutter/flutter/blob/master/packages/flutter_tools/lib/src/test/coverage_collector.dart
+
+COVERAGE_DIR=coverage
+HTML_REPORT_DIR="$COVERAGE_DIR/html"
+LCOV_FILE="$COVERAGE_DIR/lcov.info"
+
+
+# dart pub global activate coverage
+
+# rm -rf "$COVERAGE_DIR"
+
+
+# dart test --coverage="$COVERAGE_DIR" 
+# format_coverage --lcov --in="$COVERAGE_DIR" --out="$LCOV_FILE" --package=. --report-on=lib
+
+dart run coverage:test_with_coverage --branch-coverage --function-coverage
+genhtml "$LCOV_FILE" -o "$HTML_REPORT_DIR" --rc genhtml_branch_coverage=1
+
+

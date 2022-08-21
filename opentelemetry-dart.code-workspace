@@ -1,0 +1,43 @@
+{
+    "folders": [
+        {
+            "path": "opentelemetry-api",
+        },
+        {
+            "path": "opentelemetry-sdk",
+        },
+        {
+            "path": "opentelemetry-otlp",
+        },
+        {
+            "path": "opentelemetry-otlp-http",
+        },
+    ],
+    "settings": {
+        "cSpell.ignorePaths": [
+            "*.freezed.dart",
+            "*.g.dart",
+            "node_modules",
+            "vscode-extension",
+            ".git/objects",
+            ".vscode",
+            ".vscode-insiders",
+            "*.code-workspace"
+        ],
+        "workbench.editor.enablePreview": false,
+        "debug.openDebug": "openOnDebugBreak",
+        "debug.internalConsoleOptions": "openOnSessionStart",
+        "[dart]": {
+            "editor.formatOnSave": true,
+            "editor.formatOnType": true,
+            "editor.rulers": [
+                120
+            ],
+            "editor.selectionHighlight": false,
+            "editor.suggest.snippetsPreventQuickSuggestions": false,
+            "editor.suggestSelection": "first",
+            "editor.tabCompletion": "onlySnippets",
+            "editor.wordBasedSuggestions": false,
+        },
+    }
+}

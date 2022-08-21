@@ -1,0 +1,1 @@
+library opentelemetry_otlp_grpc;

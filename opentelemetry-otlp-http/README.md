@@ -1,4 +1,4 @@
-# OpenTelemetry for Dart
+# OpenTelemetry Protocol (OTLP) http exporter for Dart
 
 This library is a fork of the original work done by Workiva Inc.
 

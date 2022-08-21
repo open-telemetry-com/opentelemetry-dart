@@ -12,6 +12,9 @@
         {
             "path": "opentelemetry-otlp-http",
         },
+        {
+            "path": "opentelemetry-otlp-grpc",
+        },
     ],
     "settings": {
         "cSpell.ignorePaths": [

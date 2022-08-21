@@ -1,0 +1,55 @@
+# This file configures the static analysis results for your project (errors,
+# warnings, and lints).
+#
+# This enables the 'recommended' set of lints from `package:lints`.
+# This set helps identify many issues that may lead to problems when running
+# or consuming Dart code, and enforces writing Dart using a single, idiomatic
+# style and format.
+#
+# If you want a smaller set of lints you can change this to specify
+# 'package:lints/core.yaml'. These are just the most critical lints
+# (the recommended set includes the core lints).
+# The core lints are also what is used by pub.dev for scoring packages.
+
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    - always_declare_return_types
+    - prefer_single_quotes
+    - sort_child_properties_last
+    - unawaited_futures
+    - unsafe_html
+    - use_full_hex_values_for_flutter_colors
+    - prefer_final_in_for_each
+    - unnecessary_statements
+    - always_put_required_named_parameters_first
+    - avoid_multiple_declarations_per_line
+    - avoid_returning_null
+    - always_put_control_body_on_new_line
+    - sort_pub_dependencies
+    - always_use_package_imports
+#    - await_only_futures
+analyzer:
+  exclude: ["lib/**/*.pb*.dart"]
+  language:
+    strict-raw-types: true
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  errors:
+    todo: ignore
+    missing_return: error
+    curly_braces_in_flow_control_structures: error
+    always_put_control_body_on_new_line: error
+    invalid_use_of_protected_member: error
+    unnecessary_brace_in_string_interps: ignore
+# analyzer:
+#   exclude:
+#     - path/to/excluded/files/**
+
+# For more information about the core and recommended set of lints, see
+# https://dart.dev/go/core-lints
+
+# For additional information about configuring this file, see
+# https://dart.dev/guides/language/analysis-options
